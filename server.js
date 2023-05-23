@@ -28,7 +28,7 @@ app.use(cors())
 //CRUD - GET method
 app.get('/', async(req,res)=>{
     try{
-        res.render('/index.ejs')
+        res.render('index.ejs')
     }catch(error) {
         res.status(500).send({message: error.message})
     }
