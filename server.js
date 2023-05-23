@@ -18,6 +18,13 @@ MongoClient.connect(dbConnectionString, {useUnifiedTopology: true})
         collection = db.collection('movies') // collection name is movies
     })
 
+//set middleware
+app.set('view engine', 'ejs')
+app.use(express.static('public')) 
+app.use(express.urlencoded({extended:true}))
+app.use(express.json()) // helps Express to parse json data
+app.use(cors())
+
 //create port
 app.listen(process.env.PORT || PORT, ()=>{
     console.log(`Server is running!`)

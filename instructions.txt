@@ -9,7 +9,8 @@
 
 //5. Connect to MongoDB - add connection string to .env file
 
-//6. Add .env file to gitignore
+//6. Add .env file to gitignore 
+//remove .env file from gitignore before pushing on heroku
 
 //7. Create Port
 
@@ -19,7 +20,7 @@
 
 //9. Create Public and Views folders - add main.js and style.css to Public and index.ejs to Views
 
-//10. From root, init local git repo and commit
+//10. Add content to main.js, style.css, index.ejs
 
 //11. Create heroku repo
 
