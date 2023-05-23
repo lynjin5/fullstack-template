@@ -25,6 +25,15 @@ app.use(express.urlencoded({extended:true}))
 app.use(express.json()) // helps Express to parse json data
 app.use(cors())
 
+//CRUD - GET method
+app.get('/', async(req,res)=>{
+    try{
+        res.render('/index.ejs')
+    }catch(error) {
+        res.status(500).send({message: error.message})
+    }
+})
+
 //create port
 app.listen(process.env.PORT || PORT, ()=>{
     console.log(`Server is running!`)
